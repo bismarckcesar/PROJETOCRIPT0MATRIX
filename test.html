@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>criptografia2019.2</title>
+	<link rel="stylesheet" href="cripito2019.css">
+    <link rel="stylesheet" href="animate.css">
+	<style type="text/css">
+		:root {
+            --w: 70%;
+            --h: 55%;
+        }
+		.dialog {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0px;
+            height: 0px;
+            
+            overflow: hidden;
+            transition: 1s;
+            z-index: 10;
+            background: rgba(250,250,250,0.8);
+        }
+        .dialog div {
+            width: var(--w);
+            height: var(--h);
+            padding: 1em;
+            text-align: justify;
+        }
+        
+        #sobre{
+        	display: none;
+        }
+         label[for="sobre"]{
+         	cursor: pointer;
+         }
+        .dialog1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0px;
+            height: 0px;
+            overflow: hidden;
+            transition: 1s;
+            z-index: 10;
+            background: rgba(250,250,250,0.8);
+        }
+        .dialog1 div {
+            width: var(--w);
+            height: var(--h);
+            padding: 1em;
+            text-align: justify;
+        }
+         label[for="sobre"]{
+         	cursor: pointer;	
+         }
+          #sobre:checked + .dialog1 {
+            /*display: block;*/
+            width: var(--w);
+            height: var(--h);
+            top: calc(50% - (var(--h) / 2));
+            left: calc(50% - (var(--w) / 2));
+            
+        }
+        #como{
+			display: none;
+		}
+		.dialog2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0px;
+            height: 0px;
+            
+            overflow: hidden;
+            transition: 1s;
+            z-index: 10;
+            background: rgba(250,250,250,0.8);
+        }
+        .dialog2 div {
+            width: var(--w);
+            height: var(--h);
+            padding: 1em;
+            text-align: justify;
+        }
+         label[for="como"]{
+         	cursor: pointer;
+         }
+         #como:checked + .dialog2 {
+            /*display: block;*/
+            width: var(--w);
+            height: var(--h);
+            top: calc(50% - (var(--h) / 2));
+            left: calc(50% - (var(--w) / 2));
+            
+        }
+	</style>
+</head>
+<body>
+	<h1 class="animated shake">CRIPTOGRAMA</h1>
+	<a href="jogar.html"><h2>Jogar</h2></a> <br>
+
+    <h2><label for="sobre">Sobre</label></h2>
+    <input type="checkbox" id="sobre">
+     <div class="dialog1">
+    	<div>
+                
+    		<ul><li>Itallo_Castro</li></ul>
+    		<ul><li>Bismarck_Cesar</li></ul>
+    		<ul><li>Cândida_Ferreira</li></ul>
+            <ul><li>Welyson_Santana</li></ul>
+            <ul><li>Victor_Vinicius</li></ul>
+                <strong>ORIENTADO/PROFESSOR:</strong>
+            <ul><li>Allan_Lima</li></ul>
+    			
+    		<label for="sobre">X</label>
+    	</div>
+    </div> <br>
+ 	<h2><label for="como">Como Jogar</label></h2>
+    <input type="checkbox" id="como">
+    <div class="dialog2">
+    	<div>
+    		<p>Um criptograma é uma lógica pré-determinada para decifrar uma mensagem. Você terá que decifrar o código da linguagem alieníngena utilizada pela FGR(frente galática revolucionária) e salvar à galáxia. Haverá um mensagem códificada composta por símbolos estranhos,  a baixo de cada símbolo desta linguagem existirá um espaço a ser preenchido com uma letra do alfabeto correspondente. Boa Sorte!</p><br>
+    		<label for="como">X</label>
+    	</div>
+    </div>   
+
+</body>
+</html>
