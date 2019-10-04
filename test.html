@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>criptografia2019.2</title>
+	<link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="animate.css">
+	<style type="text/css">
+		:root {
+            --w: 70%;
+            --h: 55%;
+        }
+		.display {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0px;
+            height: 0px;
+            overflow: hidden;
+            transition: 1s;
+            z-index: 10;
+            background: rgba(250,250,250,0.8);
+        }
+        .display div {
+            width: var(--w);
+            height: var(--h);
+            padding: 1em;
+            text-align: justify;
+        }
+        
+        #sobre{
+        	display: none;
+        }
+         label[for="sobre"]{
+         	cursor: pointer;
+         }
+        .display1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0px;
+            height: 0px;
+            overflow: hidden;
+            transition: 1s;
+            z-index: 10;
+            background: rgba(250,250,250,0.8);
+        }
+        .display1 div {
+            width: var(--w);
+            height: var(--h);
+            padding: 1em;
+            text-align: justify;
+        }
+         label[for="sobre"]{
+         	cursor: pointer;	
+         }
+          #sobre:checked + .display1 {
+            width: var(--w);
+            height: var(--h);
+            top: calc(50% - (var(--h) / 2));
+            left: calc(50% - (var(--w) / 2));
+            
+        }
+        #como{
+			display: none;
+		}
+		.display2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0px;
+            height: 0px;
+            overflow: hidden;
+            transition: 1s;
+            z-index: 10;
+            background: rgba(250,250,250,0.8);
+        }
+        .display2 div {
+            width: var(--w);
+            height: var(--h);
+            padding: 1em;
+            text-align: justify;
+        }
+         label[for="como"]{
+         	cursor: pointer;
+         }
+         #como:checked + .display2 {
+            /*display: block;*/
+            width: var(--w);
+            height: var(--h);
+            top: calc(50% - (var(--h) / 2));
+            left: calc(50% - (var(--w) / 2));
+            
+        }
+	</style>
+</head>
+<body>
+	<h1 class="animated shake">CRIPTOGRAMA</h1>
+	<a href="jogar.html"><h2>Jogar</h2></a> <br>
+
+    <h2><label for="sobre">Sobre</label></h2>
+    <input type="checkbox" id="sobre">
+     <div class="display1">
+    	<div>
+                
+    		<ul><li>Itallo_Castro</li></ul>
+    		<ul><li>Bismarck_Cesar</li></ul>
+    		<ul><li>Cândida_Ferreira</li></ul>
+            <ul><li>Welyson_Santana</li></ul>
+            <ul><li>Victor_Vinicius</li></ul>
+                <strong>ORIENTADO/PROFESSOR:</strong>
+            <ul><li>Allan_Lima</li></ul>
+    			
+    		<label for="sobre">X</label>
+    	</div>
+    </div> <br>
+ 	<h2><label for="como">Como Jogar</label></h2>
+    <input type="checkbox" id="como">
+    <div class="display2">
+    	<div>
+    		<p>Um criptograma é uma lógica pré-determinada para decifrar uma mensagem. O criptograma pode ser montado envolvendo números, letras, e/ou símbolos gráficos.Use o fato que letra corresponde a um símbolo e letras iguais tem símbolos iguais para conseguir completar cada desafio.</p><br>
+    		<label for="como">X</label>
+    	</div>
+    </div>   
+
+</body>
+
+</html>
