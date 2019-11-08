@@ -9,7 +9,7 @@ routes.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
 routes.get('/jogo', (req, res) => {
-    res.render('server', { dica: jogo.dica, symbol: jogo.symbol, senha: jogo.senha });
+    res.render('server', { dica: jogo.dica, arr: jogo.arr, senha: jogo.senha });
 });
 routes.get('/ganhou', (req, res) => {
     res.sendFile(__dirname + '/ganhou.html');
