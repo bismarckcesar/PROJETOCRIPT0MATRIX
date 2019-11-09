@@ -32,3 +32,4 @@ routes.post('/gabarito', (req, res) => {
         res.sendFile(__dirname + '/perdeu.html');
     }
 });
+module.exports = router;
