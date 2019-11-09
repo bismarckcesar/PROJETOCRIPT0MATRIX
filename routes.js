@@ -1,9 +1,7 @@
 const express = require("express");
 const routes = express.Router();
 
-routes.get("/index", (req, res) => {
-  res.render("index.html")
-})
+
 
 routes.post("/gabarito", (req, res) => {
   const resposta = ["a", "a", "a", "a", "a", "a", "a", "a", "a", "a",]
