@@ -1,13 +1,6 @@
 const game = {
     dica: [
-        'mal-estar',
-        'gabriel cantor',
-        'longe da metropole',
-        'elemento quimico',
-        'auxiliar',
-        'filosofo suiço',
-        'aquele que morreu',
-        'brilhante, encerada',
+        'mal-estar', 0 'gabriel cantor', 1 'longe da metropole', 2 'elemento quimico', 3 'auxiliar', 4 'filosofo suiço', 5 'aquele que morreu', 6 'brilhante, encerada', 7
     ],
 
     arrl: ['☢ ☤ ☸ ♟ ☁ ☀ ☠ ♟'],
