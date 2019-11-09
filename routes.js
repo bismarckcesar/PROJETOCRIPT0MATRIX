@@ -9,10 +9,9 @@ routes.post("/gabarito", (req, res) => {
     const resultado = resposta.every((item, index) => item === submit[`p${index}`])
     console.log(resultado)
     if (resultado) {
-        res.send("ganhou")
+        res.sendFile(__dirname + '/ganhou.html');
     } else {
-        res.send("senha errada")
-
+        res.sendFile(__dirname + '/perdeu.html');
     }
 })
 
