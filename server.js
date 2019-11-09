@@ -12,7 +12,7 @@ app.use(express.static('public'));
 app.use(express.static('jogo'));
 app.use(express.static(__dirname));
 
-app.use(require('rotas'));
+app.use(require('./rotas'));
 
 
 app.listen(8001);
