@@ -1,0 +1,25 @@
+{
+  "name": "PROJETOCRIPT0MATRIX",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jogo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bismarckcesar/PROJETOCRIPT0MATRIX.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bismarckcesar/PROJETOCRIPT0MATRIX/issues"
+  },
+  "homepage": "https://github.com/bismarckcesar/PROJETOCRIPT0MATRIX#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mustache-express": "^1.3.0"
+  }
+}
