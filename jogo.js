@@ -1,6 +1,6 @@
 const game = {
     dica: [
-        'mal-estar'
+        'mal-estar',
         'gabriel o(?) cantor',
         'longe da metropole',
         'elemento quimico',
