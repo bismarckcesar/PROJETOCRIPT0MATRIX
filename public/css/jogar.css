@@ -17,6 +17,14 @@ h1 {
 table,
 th,
 td {
+    font-weight: bold;
+    padding: .7em;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: .5em;
+    table-layout: fixed;
+    text-align: center;
     border: 1px solid black;
     border-collapse: collapse;
     background-color: #f1f1c1;
