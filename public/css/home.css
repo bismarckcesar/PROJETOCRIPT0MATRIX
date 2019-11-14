@@ -2,7 +2,7 @@
 body {
     font-family: 'Saira Stencil One', cursive;
     text-align: center;
-    background-image: url("public\img\cryp.jpg");
+    background-image: url("/img/cryp.jpg");
     background-size: 115%;
 }
 
@@ -32,4 +32,13 @@ h2:hover {
 h2:active {
     color: white;
     size: 15px;
+}
+table,
+th,
+td {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #f1f1c1;
+    
 }
