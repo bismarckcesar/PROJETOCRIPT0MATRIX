@@ -21,12 +21,6 @@ routes.get('/fase2', (req, res) => {
 routes.get('/fase3', (req, res) => {
     res.sendFile(__dirname + '/public/fases/fase3.html');
 });
-routes.get('/fase4', (req, res) => {
-    res.sendFile(__dirname + '/public/fases/fase4.html');
-});
-routes.get('/fase5', (req, res) => {
-    res.sendFile(__dirname + '/public/fases/faseboss.html');
-});
 
 routes.post("/gabarito", (req, res) => {
     const resposta = ["incômodo", "pensador", "interior", "potássio", "assessor", "rousseau", "falecido", "lustrada"]
@@ -65,27 +59,6 @@ routes.post("/gabarito3", (req, res) => {
         res.sendFile(__dirname + '/perdeu.html');
     }
 })
-routes.post("/gabarito4", (req, res) => {
-    const resposta = ["", "", "", "", "", "", "", "", "", "", ]
-    const submit = req.body
-    const resultado = resposta.every((item, index) => item === submit[`p${index}`])
-    console.log(resultado)
-    if (resultado) {
-        res.sendFile(__dirname + '/public\fases\bossfase.html');
-    } else {
-        res.sendFile(__dirname + '/perdeu.html');
-    }
-})
-routes.post("/gabarito5", (req, res) => {
-    const resposta = ["", "", "", "", "", "", "", "", "", "", ]
-    const submit = req.body
-    const resultado = resposta.every((item, index) => item === submit[`p${index}`])
-    console.log(resultado)
-    if (resultado) {
-        res.sendFile(__dirname + '/ganhou.html');
-    } else {
-        res.sendFile(__dirname + '/perdeu.html');
-    }
-})
+
 
 module.exports = routes
