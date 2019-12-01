@@ -28,15 +28,15 @@ routes.get('/perdeu', (req, res) => {
 });
 routes.post("/gabarito", (req, res) => {
     const resposta = [
-        ["i","n","c","ô","m","o","d","o"],
-         ["p","e","n","s","a","d","o","r"], 
-        ["i","n","t","e","r","i","o","r"] , 
-        ["p","o","t","á","s","s","i","o"] , 
-        ["a","s","s","e","s","s","o","r"] , 
-        ["r","o","u","s","s","e","a","u"] , 
-        ["f","a","l","e","c","i","d","o"] , 
-        ["l","u","s","t","r","a","d","a"] 
-        ]
+        ["i", "n", "c", "o", "m", "o", "d", "o"],
+        ["p", "e", "n", "s", "a", "d", "o", "r"],
+        ["i", "n", "t", "e", "r", "i", "o", "r"],
+        ["p", "o", "t", "a", "s", "s", "i", "o"],
+        ["a", "s", "s", "e", "s", "s", "o", "r"],
+        ["r", "o", "u", "s", "s", "e", "a", "u"],
+        ["f", "a", "l", "e", "c", "i", "d", "o"],
+        ["l", "u", "s", "t", "r", "a", "d", "a"]
+    ]
     const resenha1 = "odisseia"
     const senha1 = req.body.Senha
     const submit = req.body
@@ -51,10 +51,23 @@ routes.post("/gabarito", (req, res) => {
     }
 })
 routes.post("/gabarito2", (req, res) => {
-    const resposta = ["", "", "", "", "", "", "", "", "", "", ]
+    const resposta = [
+        ["l", "u", "c", "r", "a", "r"],
+        ["c", "r", "o", "a", "t", "a"],
+        ["s", "e", "n", "h", "o", "r"],
+        ["s", "i", "t", "u", "a", "r"],
+        ["s", "e", "r", "e", "i", "a"],
+        ["c", "a", "o", "l", "h", "a"],
+        ["e", "c", "l", "u", "s", "a"],
+        ["i", "m", "e", "r", "s", "o"]
+    ]
+    const resenha2 = "controle"
+    const senha2 = req.body.Senha
     const submit = req.body
     const resultado = resposta.every((item, index) => item === submit[`p${index}`])
     console.log(resultado)
+    console.log(submit)
+    console.log(senha2)
     if (resultado) {
         res.sendFile(__dirname + '/public/fases/fase3.html');
     } else {
@@ -62,10 +75,26 @@ routes.post("/gabarito2", (req, res) => {
     }
 })
 routes.post("/gabarito3", (req, res) => {
-    const resposta = ["", "", "", "", "", "", "", "", "", "", ]
+    const resposta =
+    [
+        ["a", "r", "g", "o", "l", "a"], 
+        ["l", "a", "n", "c", "h", "e"],
+        ["a", "n", "s", "e", "i", "o"],
+        ["n", "o", "v", "i", "ç", "o"],
+        ["u", "t", "o", "p", "i", "a"],
+        ["j", "u", "d", "i", "a", "r"],
+        ["a", "r", "r", "e", "i", "o"],
+        ["g", "i", "r", "a", "f", "a"],
+        ["i", "n", "s", "a", "n", "o"],
+        ["a", "g", "u", "l", "h", "a"]
+    ]
+    const resenha3 = "alan turing"
+    const senha3 = req.body.Senha
     const submit = req.body
     const resultado = resposta.every((item, index) => item === submit[`p${index}`])
     console.log(resultado)
+    console.log(submit)
+    console.log(senha3)
     if (resultado) {
         res.sendFile(__dirname + '/public/fases/fase4.html');
     } else {
