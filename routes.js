@@ -21,7 +21,9 @@ routes.get('/fase2', (req, res) => {
 routes.get('/fase3', (req, res) => {
     res.sendFile(__dirname + '/public/fases/fase3.html');
 });
-
+routes.get('/ganhou', (req, res) => {
+    res.sendFile(__dirname + '/ganhou.html');
+});
 
 routes.get('/perdeu', (req, res) => {
     res.sendFile(__dirname + '/perdeu.html');
@@ -45,9 +47,9 @@ routes.post("/gabarito", (req, res) => {
     console.log(submit)
     console.log(senha1)
     if (resultado || senha1 == resenha1) {
-        res.sendFile(__dirname + '/public/fases/fase2.html');
+        return res.redirect("/fase2");
     } else {
-        res.sendFile(__dirname + '/perdeu.html');
+        return res.redirect("/perdeu");
     }
 })
 routes.post("/gabarito2", (req, res) => {
@@ -68,10 +70,10 @@ routes.post("/gabarito2", (req, res) => {
     console.log(resultado)
     console.log(submit)
     console.log(senha2)
-    if (resultado) {
-        res.sendFile(__dirname + '/public/fases/fase3.html');
+    if (resultado || resenha2 == senha2) {
+        return res.redirect("/fase3");
     } else {
-        res.sendFile(__dirname + '/perdeu.html');
+        return res.redirect("/perdeu");
     }
 })
 routes.post("/gabarito3", (req, res) => {
@@ -95,10 +97,10 @@ routes.post("/gabarito3", (req, res) => {
     console.log(resultado)
     console.log(submit)
     console.log(senha3)
-    if (resultado) {
-        res.sendFile(__dirname + '/public/fases/fase4.html');
+    if (resultado || resenha3 == senha3) {
+        return res.redirect("/ganhou");
     } else {
-        res.sendFile(__dirname + '/perdeu.html');
+        return res.redirect("/perdeu");
     }
 })
 
